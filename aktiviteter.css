@@ -127,6 +127,34 @@ label {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
+.switch-red2 {
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #CF3027;
+  width: 50%;
+  height: 42px;
+  font-family: ‘Arial’, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.switch-pink2 {
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background-color: #F9EEF0;
+  width: 50%;
+  height: 42px;
+  font-family: ‘Arial’, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #CF3027;
+  cursor: pointer;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
 .search-btn {
   display: flex;
   justify-content: center;
