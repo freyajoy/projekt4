@@ -196,7 +196,8 @@ body {
     border-radius: 20px;
 
 }
-.forslag img {width: 100%;}
+.forslag img {width: 100%;
+    border-radius: 20px}
 
 .forslagtekst { 
     background-color:#F9EEF0;
