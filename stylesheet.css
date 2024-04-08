@@ -1,7 +1,7 @@
 h1 {
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 700;
-    color: #474f95;
+    color: #CF3027;
     font-size: 1.8rem;
 }
 
@@ -90,7 +90,7 @@ p {
     font-size: 1.667rem;
     color: #19998B;
 }
-
+i  { color: #3b2226;}
 body {
     margin: 36px;
     box-sizing: border-box;
