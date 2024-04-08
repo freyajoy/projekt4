@@ -190,10 +190,13 @@ body {
     padding: 36px;
 }
 
-.forslag { 
+.forslag {
+    box-sizing: border-box;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+
 }
+.forslag img {width: 50%;}
 
 .forslagtekst { 
     background-color:#F9EEF0;
