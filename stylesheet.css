@@ -90,7 +90,18 @@ p {
     font-size: 1.667rem;
     color: #19998B;
 }
+/*menu*/
+.navbar {
+    width: 30%;
+    display: flex; 
+    justify-content: space-around;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
 i  { color: #3b2226;}
+
+
+
 body {
     margin: 36px;
     box-sizing: border-box;
