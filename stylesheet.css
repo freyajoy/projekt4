@@ -27,8 +27,7 @@ p {
     font-family: ‘Arial’, sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.65);
-}
+    color: rgba(0, 0, 0, 0.65);} 
 
 .p-underline {
     font-family: ‘Arial’, sans-serif;
@@ -38,6 +37,11 @@ p {
     text-decoration: underline;
 }
 
+.p-menu {font-family: ‘Arial’, sans-serif;
+    font-weight: 300;
+    font-size: 0.5rem;
+    color: #29223b;
+    }
 /*Knapper*/ 
 .red-btn {
     background-color: #CF3027;
@@ -91,11 +95,14 @@ p {
     color: #19998B;
 }
 /*menu*/
-.navbar {
+.menu {
     width: 30%;
+    position: fixed;
+    bottom:0;
     display: flex; 
     justify-content: space-around;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 10px;
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
 }
 
 i  { color: #3b2226;}
