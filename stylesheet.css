@@ -183,6 +183,7 @@ body {
 .homepage {
     background-color: #CF3027; 
     margin: -36px;
+    padding-bottom: 120px;
 }
 .homepagewhite { 
     border-radius: 10px; 
@@ -227,6 +228,19 @@ margin-bottom: -10px;
     padding: 0 36px;
 }
 
+.pointcontainer { background-color:#F9EEF0;
+    padding: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;}
+
+.topointshop { display: flex;
+    flex-direction: row;
+justify-content: flex-end;
+align-items: center;}
+
+
+
 .friendscontainer {display: flex;
     flex-wrap: nowrap;
 }
@@ -238,3 +252,10 @@ margin-bottom: -10px;
     height: 100px;
     margin: 20px;
 }
+
+.homepagebund { display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepagebund h3 { color: white;}
