@@ -1,8 +1,18 @@
-.inputoverskrift{
-    font-family: arial;
-    font-weight: 500;
-    font-size: 16pt;
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 
+Label>p{
+    font-family: ‘Arial’, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 .inputfelt {
@@ -10,7 +20,24 @@
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
-    font-family: arial;
-    font-weight: 500;
-    font-size: 16pt;
+    font-family: ‘Arial’, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    margin: 0;
+    height: 30px;
+    margin-bottom: 5px;
 }
+
+.btnflex {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#message{
+    color: red;
+}
+
