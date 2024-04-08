@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="da">
-     <head>
-        <link rel="stylesheet" href="stylesheet.css">
-        <meta charset="UTF-8">
-        <title>Vær Fri-Villig</title>
-        <link href=“https://fonts.cdnfonts.com/css/avenir-lt-pro” rel=“stylesheet”>
-        <link href=“https://fonts.cdnfonts.com/css/arial” rel=“stylesheet”>
-        <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find aktiviteter</title>
+    <link rel="stylesheet" href="aktiviteter.css">
+    <script src="aktiviteter.js" defer></script>
+    <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
+    <link href=“https://fonts.cdnfonts.com/css/avenir-lt-pro” rel=“stylesheet”>
+    <link href=“https://fonts.cdnfonts.com/css/arial” rel=“stylesheet”>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+      <h1>Find aktiviteter</h1>
+      <p>200 point</p>
+    </header>
+    <main>
+
+        <div class="switch-btn">
+          <button type="button" class="switch-red">Aktiviteter</button>
+          <button type="button" class="switch-pink">Kurser og oplæg</button>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">Tilpas præferencer
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="accordion-content">
+                
+                <!-- indhold til accordion -->
+                <div class="filter-section">
+                  <h3>Vælg Interesser</h3>
+                  <label><input type="checkbox" name="interesser" value="indendørs"> Indendørs</label><br>
+                  <label><input type="checkbox" name="interesser" value="udendørs"> Udendørs</label><br>
+                  <label><input type="checkbox" name="interesser" value="skole-og-mentor"> Skole og Mentor</label><br>
+                  <label><input type="checkbox" name="interesser" value="kreativ"> Kreativ</label><br>
+                  <label><input type="checkbox" name="interesser" value="aktiv"> Aktiv</label><br>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="filter-section">
+                  <h3>Vælg Aldersgruppe</h3>
+                  <label><input type="checkbox" name="aldersgruppe" value="under-7"> Under 7 år</label><br>
+                  <label><input type="checkbox" name="aldersgruppe" value="7-13"> 7-13 år</label><br>
+                  <label><input type="checkbox" name="aldersgruppe" value="14-16"> 14-16 år</label><br>
+                  <label><input type="checkbox" name="aldersgruppe" value="17-18"> 17-18 år</label><br>
+                  <label><input type="checkbox" name="aldersgruppe" value="18-22"> 18-22 år</label><br>
+                  <label><input type="checkbox" name="aldersgruppe" value="23+"> 23+ år</label><br>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="filter-section">
+                  <h3>Vælg Varighed</h3>
+                  <label><input type="checkbox" name="varighed" value="2-timer"> 2 timer eller under</label><br>
+                  <label><input type="checkbox" name="varighed" value="3-5-timer"> 3-5 timer</label><br>
+                  <label><input type="checkbox" name="varighed" value="6+-timer"> 6+ timer</label><br>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="search-btn">
+                  <button class="green-btn" onclick="filterItems()">Søg</button>
+                </div>
+              
+              </div>
+            </div>
+        </div>
+
+        <!-- Artikler -->
+
+        <div class="article-1"></div>
+          <div class="article-container">
+            
+            
+            <div class="box"></div>
+          </div>
+
+    </main>   
+</body>
+</html>
