@@ -162,3 +162,69 @@ body {
     flex-direction: column;
     align-self: center;
   }
+
+  header img {margin: 36px;
+}
+  
+  .point-btn {
+    margin: 36px;
+    padding: 0 36px;
+    background-color:#ffffff;
+    height: 52px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    font-family: ‘Avenir LT Pro’, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #CF3027
+}
+
+.homepage {
+    background-color: #CF3027; 
+    margin: -36px;
+}
+.homepagewhite { 
+    border-radius: 10px; 
+    background-color: white;
+    padding: 36px;
+}
+
+.forslag { 
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.forslagtekst { 
+    background-color:#F9EEF0;
+    padding: 36px; 
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.forslagtekst i {display: flex; 
+    justify-content: flex-end;
+    margin-left: 36px;}
+
+.forslagtekst p {display: flex; 
+    justify-content: flex-end;}
+
+.tidogdato {
+    display: flex; 
+    align-items: center;
+}
+
+.tidogdato i {
+    color:rgba(0, 0, 0, 0.65); 
+    padding: 0 36px;
+}
+
+.forslagvenner {display: flex; 
+    flex-wrap: wrap;
+    flex-direction:row;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+ 
+}
