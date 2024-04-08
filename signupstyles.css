@@ -1,0 +1,16 @@
+.inputoverskrift{
+    font-family: arial;
+    font-weight: 500;
+    font-size: 16pt;
+
+}
+
+.inputfelt {
+    border-color: #C6C6C6;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: arial;
+    font-weight: 500;
+    font-size: 16pt;
+}
