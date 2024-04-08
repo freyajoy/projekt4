@@ -94,6 +94,31 @@ p {
     font-size: 1.667rem;
     color: #19998B;
 }
+
+.red-btn :hover {
+    background-color: #F9EEF0;
+    border: 3px solid #CF3027;
+    color: #CF3027;
+}
+
+.pinkt-btn :hover {
+    background-color: #CF3027;
+    border: none;
+    color: #ffffff;
+}
+
+.green-btn :hover {
+    background-color: #D8FAF7;
+    border: 3px solid #19998B;
+    color: #19998B;
+}
+
+.lightgreen-btn :hover {
+    background-color: #19998B;
+    border: none;
+    color: #ffffff;
+}
+
 /*menu*/
 .menu {
     width: 30%;
