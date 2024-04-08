@@ -14,26 +14,26 @@ h2 {
 h3 {
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 p {
     font-family: ‘Arial’, sans-serif;
     font-weight: 400;
-    font-size: 1.5 rem;
+    font-size: 1rem;
 }
 
 .p-detail {
     font-family: ‘Arial’, sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: rgba(0, 0, 0, 0.65);
 }
 
 .p-underline {
     font-family: ‘Arial’, sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #19998B;
     text-decoration: underline;
 }
