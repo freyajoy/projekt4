@@ -126,7 +126,7 @@ p {
     bottom:0;
     display: flex; 
     justify-content: space-around;
-    padding: 20px 10px;
+    padding: 20px 10px 10px 10px;
     margin: 0 -36px;
     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -137,15 +137,15 @@ p {
     align-items: center;
 }
 
-i  { color: #3b2226;}
+.menu i { color: #3b2226;}
+.menu p {padding-top: 10px;}
 
-
-
+/*body*/
 body {
     margin: 36px;
     box-sizing: border-box;
   }
-  
+
   header {
     display: flex;
     justify-content: space-between;
@@ -162,3 +162,104 @@ body {
     flex-direction: column;
     align-self: center;
   }
+
+  header img {margin: 36px;
+}
+  
+  .point-btn {
+    margin: 36px;
+    padding: 0 36px;
+    background-color:#ffffff;
+    height: 52px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    font-family: ‘Avenir LT Pro’, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #CF3027
+}
+/* startside */
+.homepage {
+    background-color: #CF3027; 
+    margin: -36px;
+    padding-bottom: 120px;
+}
+.homepagewhite { 
+    border-radius: 10px; 
+    background-color: white;
+    padding: 36px;
+}
+
+/* Bokse med billede og tekst */
+.articlecontainer {
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.articlecontainer img {width: 100%;
+    border-radius: 20px 20px 0 0;
+margin-bottom: -10px;
+}
+
+.containertekst { 
+    background-color:#F9EEF0;
+    padding: 36px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.containertekst i {display: flex; 
+    justify-content: flex-end;
+    margin-left: 36px;}
+
+.containertekst h3 {margin-top: -10px; 
+     }
+
+.tidogdato {
+    display: flex; 
+    align-items: center;
+}
+
+.tidogdato i {
+    color:rgba(0, 0, 0, 0.65); 
+    margin: 0 36px;
+}
+/* point boks startside*/
+.pointcontainer { background-color:#F9EEF0;
+    padding: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;}
+
+.topointshop { display: flex;
+    flex-direction: row;
+justify-content: flex-end;
+align-items: center;}
+
+
+/* Venner billeder */
+
+.friendscontainer {display: flex;
+    flex-wrap: wrap;
+}
+
+.picture {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+}
+
+/* bunden af siden */ 
+.homepagebund { display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepagebund h3 { color: white;}
