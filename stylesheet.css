@@ -126,7 +126,7 @@ p {
     bottom:0;
     display: flex; 
     justify-content: space-around;
-    padding: 20px 10px;
+    padding: 20px 10px 10px 10px;
     margin: 0 -36px;
     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -137,15 +137,15 @@ p {
     align-items: center;
 }
 
-i  { color: #3b2226;}
+.menu i { color: #3b2226;}
+.menu p {padding-top: 10px;}
 
-
-
+/*body*/
 body {
     margin: 36px;
     box-sizing: border-box;
   }
-  
+
   header {
     display: flex;
     justify-content: space-between;
@@ -179,7 +179,7 @@ body {
     font-size: 1rem;
     color: #CF3027
 }
-
+/* startside */
 .homepage {
     background-color: #CF3027; 
     margin: -36px;
@@ -191,6 +191,7 @@ body {
     padding: 36px;
 }
 
+/* Bokse med billede og tekst */
 .articlecontainer {
     box-sizing: border-box;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -227,7 +228,7 @@ margin-bottom: -10px;
     color:rgba(0, 0, 0, 0.65); 
     padding: 0 36px;
 }
-
+/* point boks startside*/
 .pointcontainer { background-color:#F9EEF0;
     padding: 20px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -240,6 +241,7 @@ justify-content: flex-end;
 align-items: center;}
 
 
+/* Venner billeder */
 
 .friendscontainer {display: flex;
     flex-wrap: nowrap;
