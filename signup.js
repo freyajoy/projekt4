@@ -11,12 +11,12 @@ function validatePassword() {
 }
 
 
- // Function to display selected image in the preview
+ /* Function to display selected image in the preview
  function previewImage(event) {
     // Get reference to the input element
     var input = event.target;
 
-        var reader = new FileReader();
+    var reader = new FileReader();
 
         // Set the image once loaded into FileReader
         reader.onload = function(e) {
@@ -28,4 +28,5 @@ function validatePassword() {
         // Load image file into FileReader
         reader.readAsDataURL(input.files[0]);
     }
-//}
+    
+}*/
