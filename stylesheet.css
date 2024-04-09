@@ -244,7 +244,7 @@ align-items: center;}
 /* Venner billeder */
 
 .friendscontainer {display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .picture {
@@ -255,6 +255,7 @@ align-items: center;}
     margin: 20px;
 }
 
+/* bunden af siden */ 
 .homepagebund { display: flex; 
     flex-direction: column;
     align-items: center;
