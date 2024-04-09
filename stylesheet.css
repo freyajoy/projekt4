@@ -216,8 +216,8 @@ margin-bottom: -10px;
     justify-content: flex-end;
     margin-left: 36px;}
 
-.containertekst p {display: flex; 
-    justify-content: flex-end; }
+.containertekst h3 {margin-top: -10px; 
+     }
 
 .tidogdato {
     display: flex; 
