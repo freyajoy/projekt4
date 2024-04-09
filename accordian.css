@@ -13,6 +13,20 @@
   }
   
   .accordion-content {
-    padding: 10px;
     display: none;
+    padding: 10px;
+  }
+
+  .container {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 5px;
   }

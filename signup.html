@@ -12,9 +12,22 @@
         <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
         <script src="signup.js" defer></script>
     </head>
+
+
    
     <body>
         <h3>Tilføj et profil billede</h3>
+
+        <h2>Upload an Image</h2>
+
+        <!-- Input field for image selection -->
+        <input type="file" accept="image/*" onchange="previewImage()" />
+    
+        <!-- Container to display image preview -->
+        <div id="preview-container">
+            <img id="preview" src="#" alt="Image Preview" />
+        </div>
+
 
     <form action="index.html" onsubmit="return validatePassword()">
         <label for="name"><p>Navn</p></label>
