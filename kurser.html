@@ -33,38 +33,26 @@
                 <!-- indhold til accordion -->
                 <div class="filter-section">
                   <h3>Vælg Interesser</h3>
-                  <label><input type="checkbox" name="interesser" value="indendørs"> Indendørs</label><br>
-                  <label><input type="checkbox" name="interesser" value="udendørs"> Udendørs</label><br>
-                  <label><input type="checkbox" name="interesser" value="skole-og-mentor"> Skole og Mentor</label><br>
-                  <label><input type="checkbox" name="interesser" value="kreativ"> Kreativ</label><br>
-                  <label><input type="checkbox" name="interesser" value="aktiv"> Aktiv</label><br>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="filter-section">
-                  <h3>Vælg Aldersgruppe</h3>
-                  <label><input type="checkbox" name="aldersgruppe" value="under-7"> Under 7 år</label><br>
-                  <label><input type="checkbox" name="aldersgruppe" value="7-13"> 7-13 år</label><br>
-                  <label><input type="checkbox" name="aldersgruppe" value="14-16"> 14-16 år</label><br>
-                  <label><input type="checkbox" name="aldersgruppe" value="17-18"> 17-18 år</label><br>
-                  <label><input type="checkbox" name="aldersgruppe" value="18-22"> 18-22 år</label><br>
-                  <label><input type="checkbox" name="aldersgruppe" value="23+"> 23+ år</label><br>
+                  <label><input type="checkbox" id="Indendørs" value="Indendørs" class="category"> Indendørs</label><br>
+                  <label><input type="checkbox" id="Udendørs" value="Udendørs" class="category"> Udendørs</label><br>
+                  <label><input type="checkbox" id="Skole" value="Skole" class="category"> Skole og Mentor</label><br>
+                  <label><input type="checkbox" id="Kreativ" value="Kreativ" class="category"> Kreativ</label><br>
+                  <label><input type="checkbox" id="Aktiv" value="Aktiv" class="category"> Aktiv</label><br>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="filter-section">
                   <h3>Vælg Varighed</h3>
-                  <label><input type="checkbox" name="varighed" value="2-timer"> 2 timer eller under</label><br>
-                  <label><input type="checkbox" name="varighed" value="3-5-timer"> 3-5 timer</label><br>
-                  <label><input type="checkbox" name="varighed" value="6+-timer"> 6+ timer</label><br>
+                  <label><input type="checkbox" id="2t" value="2t" class="category"> 2 timer eller under</label><br>
+                  <label><input type="checkbox" id="3-5t" value="3-5t" class="category"> 3-5 timer</label><br>
+                  <label><input type="checkbox" id="6t" value="6t" class="category"> 6+ timer</label><br>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="search-btn">
-                  <button class="green-btn" onclick="filterItems()">Søg</button>
+                  <button class="green-btn" id="filterButton">Søg</button>
                 </div>
               
               </div>
