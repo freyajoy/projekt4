@@ -28,18 +28,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //kode til filtrering:
 
-document.getElementById("filterButton").addEventListener("click", function() {
-  // Få fat i alle de valgte kategorier
+let filterButtons = document.querySelectorAll('.filterButton');
+for (let i = 0; i < filterButtons.length; i++) {
+  filterButtons[i].addEventListener("click", function() {
+    console.log("udført")
+  
+    // Få fat i alle de valgte kategorier
   let checkedCategories = document.querySelectorAll('.category:checked');
   
   // Gå igennem alle artiklerne og skjul dem, som ikke hører til de valgte kategorier
   let articles = document.querySelectorAll('.articlecontainer');
-  for (let i = 0; i < articles.length; i++) {
-    let article = articles[i];
+  for (let j = 0; j < articles.length; j++) {
+    let article = articles[j];
     let category = article.getAttribute('data-categories').split(','); // Split kategorierne ved komma
     let shouldBeDisplayed = false;
-    for (let j = 0; j < checkedCategories.length; j++) {
-      let checkbox = checkedCategories[j];
+    for (let k = 0; k < checkedCategories.length; k++) {
+      let checkbox = checkedCategories[k];
       if (category.includes(checkbox.value)) { // Tjek om kategorien er iblandt de valgte
         shouldBeDisplayed = true;
         break; // Vi behøver ikke tjekke de andre kategorier, når vi allerede har fundet en match
@@ -51,4 +55,4 @@ document.getElementById("filterButton").addEventListener("click", function() {
       article.style.display = 'none';
     }
   }
-});
+})};
