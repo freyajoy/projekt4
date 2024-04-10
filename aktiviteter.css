@@ -171,11 +171,8 @@ label {
   /* max-height: 480px; */
 }
 
-.btn-filter-container {
-  width: 428px;
-}
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
   .article-flex {
     display: flex;
     flex-wrap: wrap;
@@ -188,8 +185,6 @@ label {
 
   .btn-filter-container {
     margin-right: 20px;
-    min-width: 400px;
+    min-width: 330px;
   }
-
-
 }
