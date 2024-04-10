@@ -126,8 +126,8 @@ p {
     bottom:0;
     display: flex; 
     justify-content: space-around;
-    padding: 20px 10px 10px 10px;
-    margin: 0 -36px;
+    padding: 20px 10px 10px 0px;
+    margin: 0px -36px;
     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
     background-color: white;
 }
@@ -137,8 +137,10 @@ p {
     align-items: center;
 }
 
-.menu i { color: #3b2226;}
-.menu p {padding-top: 10px;}
+.menu i { 
+    color: #3b2226;}
+.menu p {
+    padding-top: 10px;}
 
 a {text-decoration: none; color: #3C3253;}
 
@@ -168,13 +170,18 @@ body {
   header img {margin: 36px;
 }
 
-header a {color:#CF3027; display: flex; flex-direction: row;
-align-items: center;}
-header a i {margin-right: 10px;}
+header a {
+    color:#CF3027; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;}
+
+header a i {
+    margin-right: 10px;}
 
   
   .point-btn {
-    margin: 36px;
+    margin: 20px;
     padding: 0 36px;
     background-color:#ffffff;
     height: 52px;
@@ -191,6 +198,7 @@ header a i {margin-right: 10px;}
     background-color: #CF3027; 
     margin: -36px;
     padding-bottom: 120px;
+    
 }
 .homepagewhite { 
     border-radius: 10px; 
@@ -204,20 +212,24 @@ header a i {margin-right: 10px;}
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .articlecontainer img {width: 100%;
     border-radius: 20px 20px 0 0;
-margin-bottom: -10px;
+margin-bottom: -12px;
 }
 
 .containertekst { 
     background-color:#F9EEF0;
-    padding: 36px;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 20px 20px;
+    padding: 24px 20px;
     display: flex; 
     flex-direction: column;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .containertekst i {display: flex; 
@@ -241,12 +253,18 @@ margin-bottom: -10px;
     padding: 20px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
 
-.topointshop { display: flex;
-    flex-direction: row;
-justify-content: flex-end;
-align-items: center;}
+.topointshop a { 
+   display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topointshop i {margin-left: 20px; color: #29223b;}
 
 
 /* Venner billeder */
@@ -266,8 +284,8 @@ align-items: center;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     width: calc(100%/1.5);
-    height: 300px;
-    margin: 20px;
+    height: 200px;
+    margin: 10px;
     object-fit: cover;
 }
 
