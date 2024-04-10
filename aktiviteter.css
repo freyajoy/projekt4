@@ -168,6 +168,7 @@ label {
 
 .articlecontainer {
   max-width: 428px;
+  /* max-height: 480px; */
 }
 
 .btn-filter-container {
