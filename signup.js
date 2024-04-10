@@ -3,13 +3,16 @@ function validatePassword() {
     var confirm_password = document.getElementById("confirm_password").value;
 
     if (password !== confirm_password) {
-        document.getElementById("message").innerHTML = "Adgangskode er forkert"
+        document.getElementById("message").innerHTML = "Adgangskode er ikke ens"
         return false; // Prevent form submission
     }
 
     return true; // Allow form submission
 }
 
+function previewImage() {
+    
+}
 
  /* Function to display selected image in the preview
  function previewImage(event) {
@@ -30,3 +33,10 @@ function validatePassword() {
     }
     
 }*/
+
+let ProfilePic = document.getElementById("profile-pic")
+let inputFile = document.getElementById("input-file")
+
+inputFile.onchange = function(){
+    ProfilePic.src = URL.createObjectURL(inputFile.files[0])
+}
