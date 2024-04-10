@@ -1,0 +1,16 @@
+
+
+.articlecontainer img {height: 140px;}
+
+.beløb {display: flex; 
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.containertekst { 
+    padding: 10px 20px 20px;
+}
+
+.pointtekst { display:flex;
+justify-content: center;}
+
+body {margin-bottom: 120px;}
