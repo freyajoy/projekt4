@@ -13,34 +13,28 @@
         <script src="signup.js" defer></script>
     </head>
 
-
-   
     <body>
         <h3>Tilføj et profil billede</h3>
 
-        <h2>Upload an Image</h2>
-
-        <!-- Input field for image selection -->
-        <input type="file" accept="image/*" onchange="previewImage()" />
-    
-        <!-- Container to display image preview -->
-        <div id="preview-container">
-            <img id="preview" src="#" alt="Image Preview" />
+        <div class="preview-container">
+            <img id="profile-pic" src="images/manglende_profil_billede.png"/>
+            <label for="input-file"><i class="fa-solid fa-camera fa-2x"></i></label>
+            <input type="file" accept="image/jpeg, img/png, img/jpg" id="input-file"/>
         </div>
 
 
     <form action="index.html" onsubmit="return validatePassword()">
         <label for="name"><p>Navn</p></label>
-        <input type="text" name="name" placeholder="Dit fulde navn" class="inputfelt">
+        <input type="text" name="name" placeholder="Dit fulde navn" class="inputfelt" required>
     
         <label for="foedselsdag"><p>Fødselsdag</p></label>
         <input type="date" name="foedselsdag" class="inputfelt">
     
         <label for="email"><p>E-mail</p></label>
-        <input type="email" name="email" placeholder="Email" class="inputfelt">
+        <input type="email" name="email" placeholder="Email" class="inputfelt" required>
     
         <label for="phone"><p>Telefon</p></label>
-        <input type="tel" name="phone" placeholder="Telefonnummer" class="inputfelt">
+        <input type="tel" name="phone" placeholder="Telefonnummer" class="inputfelt" required>
     
         <label for="street"><p>Adresse</p></label>
         <input type="text" id="street" name="street" placeholder="Vej og vejnummer" class="inputfelt" required>
@@ -56,8 +50,10 @@
 
         <p id="message"></p>
 
-        <div class="btnflex"><button class="red-btn" type="submit">Bliv frivillig</button></div>
+        <div class="btnflex"><button class="pink-btn" type="submit">Bliv frivillig</button></div>
 
     </form>
 
     </body>
+
+</html>
