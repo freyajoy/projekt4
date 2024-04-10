@@ -243,18 +243,27 @@ align-items: center;}
 
 
 /* Venner billeder */
-
-.friendscontainer {display: flex;
-    flex-wrap: wrap;
+.karruselcontainer {max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.picture {
+.karruselcontainer .karrusel {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.karrusel img {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    width: 100%;
-    height: 100px;
+    width: calc(100%/1.5);
+    height: 300px;
     margin: 20px;
+    object-fit: cover;
 }
+
 
 /* bunden af siden */ 
 .homepagebund { display: flex; 

@@ -28,40 +28,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //kode til filtrering:
 
-function filterItems() {
-  // Hent værdierne fra valgte checkbokse
-  let selectedInteresser = Array.from(document.querySelectorAll('input[name="interesser"]:checked')).map(interesse => interesse.value);
-  let selectedAldersgruppe = Array.from(document.querySelectorAll('input[name="aldersgruppe"]:checked')).map(aldersgruppe => aldersgruppe.value);
-  let selectedVarighed = Array.from(document.querySelectorAll('input[name="varighed"]:checked')).map(varighed => varighed.value);
-
-  // Filtrér dine data baseret på de valgte kriterier ved hjælp af en for loop
-  let filteredItems = [];
-  for (let i = 0; i < items.length; i++) {
-      let item = items[i];
-      if (
-          selectedInteresser.includes(item.interesse) &&
-          selectedAldersgruppe.includes(item.aldersgruppe) &&
-          selectedVarighed.includes(item.varighed)
-      ) {
-          filteredItems.push(item);
+document.getElementById("filterButton").addEventListener("click", function() {
+  // Få fat i alle de valgte kategorier
+  let checkedCategories = document.querySelectorAll('.category:checked');
+  
+  // Gå igennem alle artiklerne og skjul dem, som ikke hører til de valgte kategorier
+  let articles = document.querySelectorAll('.articlecontainer');
+  for (let i = 0; i < articles.length; i++) {
+    let article = articles[i];
+    let category = article.getAttribute('data-categories').split(','); // Split kategorierne ved komma
+    let shouldBeDisplayed = false;
+    for (let j = 0; j < checkedCategories.length; j++) {
+      let checkbox = checkedCategories[j];
+      if (category.includes(checkbox.value)) { // Tjek om kategorien er iblandt de valgte
+        shouldBeDisplayed = true;
+        break; // Vi behøver ikke tjekke de andre kategorier, når vi allerede har fundet en match
       }
+    }
+    if (shouldBeDisplayed) {
+      article.style.display = 'block';
+    } else {
+      article.style.display = 'none';
+    }
   }
-
-  // Vis de filtrerede resultater
-  console.log(filteredItems);
-}
-
-// Her er et eksempel på dine data
-let items = [
-  { interesse: "indendørs", aldersgruppe: "7-13", varighed: "3-5-timer" },
-  { interesse: "udendørs", aldersgruppe: "14-16", varighed: "6+-timer" },
-  { interesse: "skole-og-mentor", aldersgruppe: "17-18", varighed: "2-timer" },
-  { interesse: "kreativ", aldersgruppe: "18-22", varighed: "6+-timer" },
-  { interesse: "aktiv", aldersgruppe: "23+", varighed: "3-5-timer" }
-];
-
-
-
-
-
-
+});
