@@ -1,6 +1,11 @@
 
 
-.articlecontainer img {height: 140px;}
+.articlecontainer img {height: 50%;
+    width: 60%;
+    align-items: center;
+}
+
+
 
 .beløb {display: flex; 
     flex-direction: row-reverse;
