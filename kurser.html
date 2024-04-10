@@ -33,18 +33,16 @@
                 <!-- indhold til accordion -->
                 <div class="filter-section">
                   <h3>Vælg Interesser</h3>
-                  <label><input type="checkbox" id="Indendørs" value="Indendørs" class="category"> Indendørs</label><br>
-                  <label><input type="checkbox" id="Udendørs" value="Udendørs" class="category"> Udendørs</label><br>
-                  <label><input type="checkbox" id="Skole" value="Skole" class="category"> Skole og Mentor</label><br>
-                  <label><input type="checkbox" id="Kreativ" value="Kreativ" class="category"> Kreativ</label><br>
-                  <label><input type="checkbox" id="Aktiv" value="Aktiv" class="category"> Aktiv</label><br>
+                  <label><input type="checkbox" id="Nødhjælp" value="Nødhjælp" class="category"> Nødhjælp </label><br>
+                  <label><input type="checkbox" id="Mental" value="Mental" class="category"> Mental sundhed og trivsel</label><br>
+                  <label><input type="checkbox" id="Lederskab" value="Lederskab" class="category"> Lederskab</label><br>
+                  <label><input type="checkbox" id="Social" value="Social" class="category"> Sociale begivenheder</label><br>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="filter-section">
                   <h3>Vælg Varighed</h3>
-                  <label><input type="checkbox" id="2t" value="2t" class="category"> 2 timer eller under</label><br>
                   <label><input type="checkbox" id="3-5t" value="3-5t" class="category"> 3-5 timer</label><br>
                   <label><input type="checkbox" id="6t" value="6t" class="category"> 6+ timer</label><br>
                 </div>
@@ -52,7 +50,7 @@
                 <div class="divider"></div>
 
                 <div class="search-btn">
-                  <button class="green-btn" id="filterButton">Søg</button>
+                  <button class="green-btn">Søg</button>
                 </div>
               
               </div>
@@ -63,7 +61,7 @@
 
         <p class="p-detail">Find kurser og oplæg</p>
 
-        <div class="articlecontainer"> 
+        <div class="articlecontainer" data-categories="Nødhjælp,Mental,6t"> 
           <img src="images/billede5-optimeret.jpg"> 
           <div class="containertekst">
               <i class="fa-solid fa-share-nodes fa-xl"></i>
@@ -82,7 +80,7 @@
         </div>
 
         <div class="articlecontainer"> 
-          <img src="images/billede6-optimeret.jpg"> 
+          <img src="images/billede6-optimeret.jpg" data-categories="Lederskab,Mental,6t"> 
           <div class="containertekst">
               <i class="fa-solid fa-share-nodes fa-xl"></i>
               <h2>Konflikthåndtering</h2>
@@ -99,8 +97,8 @@
           </div>
         </div>
 
-        <div class="articlecontainer"> 
-          <img src="images/billede6-optimeret.jpg"> 
+        <div class="articlecontainer" data-categories="Social,6t"> 
+          <img src="images/fest.jpg"> 
           <div class="containertekst">
               <i class="fa-solid fa-share-nodes fa-xl"></i>
               <h2>URK x ARC fest</h2>
@@ -112,6 +110,24 @@
                   <div class="tidogdato">
                       <i class="fa-regular fa-clock"></i>
                       <p class="p-detail"> 15:00-22:00 </p>
+                  </div>
+              <i class="fa-solid fa-angle-right fa-xl"></i>
+          </div>
+        </div>
+
+        <div class="articlecontainer" data-categories="Mental,Lederskab,Social,6t"> 
+          <img src="images/workshop.jpg"> 
+          <div class="containertekst">
+              <i class="fa-solid fa-share-nodes fa-xl"></i>
+              <h2>Inspirationsdag for alle frivillige</h2>
+              <h3> Værksteds- og Kulturhuset Badstuen, Odense C </h3>
+                  <div class="tidogdato">
+                      <i class="fa-regular fa-calendar"></i>
+                      <p class="p-detail"> 13. april 2024 </p>
+                  </div>
+                  <div class="tidogdato">
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="p-detail"> 12:00-18:00 </p>
                   </div>
               <i class="fa-solid fa-angle-right fa-xl"></i>
           </div>
