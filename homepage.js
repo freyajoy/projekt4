@@ -40,14 +40,14 @@ karrusel.addEventListener("touchend", dragStop);
 function dragStart (e) { 
     // Opdaterer globale variablers værdi ved Event
     swipe=true
-    prevPageX = e.pageX 
+    prevPageX = e.pageX || e.touches[0].pageX
     prevScrollLeft = karrusel.scrollLeft
     e.preventDefault()  ;}
 
 function dragging (e) { 
     //Scroller karrusel
     if (swipe==false) return;
-    let position = e.pageX - prevPageX
+    let position = (e.pageX || e.touches[0].pageX) - prevPageX
     karrusel.scrollLeft = prevScrollLeft - position
     e.preventDefault()}
 
@@ -56,6 +56,6 @@ function dragStop (e) {
     swipe=false}
 
 
-//|| mousemove.scrollLeft[0].pageX
+//
 
 
