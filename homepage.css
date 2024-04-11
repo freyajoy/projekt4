@@ -1,7 +1,7 @@
-/* body {
+ body {
     margin: 36px;
     box-sizing: border-box;
-  } */
+  } 
 
 /* startside */
 .homepage {
@@ -42,17 +42,17 @@
     align-items: center;
     }
     
-    .karruselcontainer .karrusel {
+.karruselcontainer .karrusel {
         white-space: nowrap;
         cursor: pointer;
         overflow: hidden;
     }
     
-    .karrusel img {
+.karrusel img {
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
         border-radius: 20px;
-        width: calc(100%/1.5);
-        height: 200px;
+        width: calc(100%/1.8);
+        height: 300px;
         margin: 10px;
         object-fit: cover;
     }
