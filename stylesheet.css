@@ -215,17 +215,20 @@ header a i {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 428px;
+   
 }
 
 
 .articlecontainer img {width: 100%;
     border-radius: 20px 20px 0 0;
-margin-bottom: -12px;
+    margin-bottom: -100px;
+
 }
 
 .containertekst { 
     background-color:#F9EEF0;
-    padding: 24px 20px;
+    padding: 25px 20px;
     display: flex; 
     flex-direction: column;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
@@ -236,7 +239,8 @@ margin-bottom: -12px;
     justify-content: flex-end;
     margin-left: 36px;}
 
-.containertekst h3 {margin-top: -10px; 
+.containertekst h3 {
+    margin-top: -10px; 
      }
 
 .tidogdato {
