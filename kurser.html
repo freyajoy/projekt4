@@ -33,26 +33,16 @@
                 <!-- indhold til accordion -->
                 <div class="filter-section">
                   <h3>Vælg Interesser</h3>
-                  <label><input type="checkbox" id="Indendørs" value="Indendørs" class="category"> Indendørs</label><br>
-                  <label><input type="checkbox" id="Udendørs" value="Udendørs" class="category"> Udendørs</label><br>
-                  <label><input type="checkbox" id="Skole" value="Skole" class="category"> Skole og Mentor</label><br>
-                  <label><input type="checkbox" id="Kreativ" value="Kreativ" class="category"> Kreativ</label><br>
-                  <label><input type="checkbox" id="Aktiv" value="Aktiv" class="category"> Aktiv</label><br>
-                </div>
-
-                <div class="divider"></div>
-
-                <div class="filter-section">
-                  <h3>Vælg Varighed</h3>
-                  <label><input type="checkbox" id="2t" value="2t" class="category"> 2 timer eller under</label><br>
-                  <label><input type="checkbox" id="3-5t" value="3-5t" class="category"> 3-5 timer</label><br>
-                  <label><input type="checkbox" id="6t" value="6t" class="category"> 6+ timer</label><br>
+                  <label><input type="checkbox" id="Nødhjælp" value="Nødhjælp" class="category"> Nødhjælp </label><br>
+                  <label><input type="checkbox" id="Mental" value="Mental" class="category"> Mental sundhed og trivsel</label><br>
+                  <label><input type="checkbox" id="Lederskab" value="Lederskab" class="category"> Lederskab</label><br>
+                  <label><input type="checkbox" id="Social" value="Social" class="category"> Sociale begivenheder</label><br>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="search-btn">
-                  <button class="green-btn" id="filterButton">Søg</button>
+                  <button class="green-btn filterButton">Søg</button>
                 </div>
               
               </div>
@@ -63,41 +53,78 @@
 
         <p class="p-detail">Find kurser og oplæg</p>
 
-        <div class="articlecontainer"> 
+        <div class="articlecontainer" data-categories="Nødhjælp,Mental"> 
           <img src="images/billede5-optimeret.jpg"> 
           <div class="containertekst">
               <i class="fa-solid fa-share-nodes fa-xl"></i>
               <h2>Førstehjælpskursus</h2>
-              <h3> Hjalleseskolen </h3>
+              <h3>Røde kors' landskontor</h3>
                   <div class="tidogdato">
                       <i class="fa-regular fa-calendar"></i>
-                      <p class="p-detail"> 13. marts 2024 </p>
+                      <p class="p-detail">18. marts 2024</p>
                   </div>
                   <div class="tidogdato">
                       <i class="fa-regular fa-clock"></i>
-                      <p class="p-detail"> 14:00-15:00 </p>
+                      <p class="p-detail">8:30-19:00</p>
                   </div>
               <i class="fa-solid fa-angle-right fa-xl"></i>
           </div>
         </div>
 
-        <div class="articlecontainer"> 
+        <div class="articlecontainer" data-categories="Lederskab,Mental"> 
           <img src="images/billede6-optimeret.jpg"> 
           <div class="containertekst">
               <i class="fa-solid fa-share-nodes fa-xl"></i>
               <h2>Konflikthåndtering</h2>
-              <h3> Hjalleseskolen </h3>
+              <h3> Tingløkkeskolen, Odense C</h3>
                   <div class="tidogdato">
                       <i class="fa-regular fa-calendar"></i>
-                      <p class="p-detail"> 13. marts 2024 </p>
+                      <p class="p-detail">24. april 2024</p>
                   </div>
                   <div class="tidogdato">
                       <i class="fa-regular fa-clock"></i>
-                      <p class="p-detail"> 14:00-15:00 </p>
+                      <p class="p-detail">9:00-18:00</p>
                   </div>
               <i class="fa-solid fa-angle-right fa-xl"></i>
           </div>
         </div>
+
+        <div class="articlecontainer" data-categories="Social"> 
+          <img src="images/fest.jpg"> 
+          <div class="containertekst">
+              <i class="fa-solid fa-share-nodes fa-xl"></i>
+              <h2>URK x ARC fest</h2>
+              <h3>Bispeengen, Frederiksberg</h3>
+                  <div class="tidogdato">
+                      <i class="fa-regular fa-calendar"></i>
+                      <p class="p-detail">20. april 2024</p>
+                  </div>
+                  <div class="tidogdato">
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="p-detail">15:00-22:00</p>
+                  </div>
+              <i class="fa-solid fa-angle-right fa-xl"></i>
+          </div>
+        </div>
+
+        <div class="articlecontainer" data-categories="Mental,Lederskab,Social"> 
+          <img src="images/workshop.jpg"> 
+          <div class="containertekst">
+              <i class="fa-solid fa-share-nodes fa-xl"></i>
+              <h2>Inspirationsdag</h2>
+              <h3>Værksteds- og Kulturhuset Badstuen, Odense C</h3>
+                  <div class="tidogdato">
+                      <i class="fa-regular fa-calendar"></i>
+                      <p class="p-detail">13. april 2024</p>
+                  </div>
+                  <div class="tidogdato">
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="p-detail">12:00-18:00</p>
+                  </div>
+              <i class="fa-solid fa-angle-right fa-xl"></i>
+          </div>
+        </div>
+
     </main>   
 </body>
 </html>
