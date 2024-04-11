@@ -126,3 +126,8 @@ header .calendar-current-date {
 .calendar-dates li:not(.active):hover::before {
     background: #e4e1e1;
 }
+
+
+.containertekst * {
+    padding: 5px;
+}
