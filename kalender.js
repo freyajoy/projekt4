@@ -10,13 +10,13 @@ const prenexIcons = document.querySelectorAll(".calendar-navigation span");
  
 // Array of month names
 const months = [
-    "January",
-    "February",
-    "March",
+    "Januar",
+    "Februar",
+    "Marts",
     "April",
-    "May",
-    "June",
-    "July",
+    "Maj",
+    "Juni",
+    "Juli",
     "August",
     "September",
     "October",
