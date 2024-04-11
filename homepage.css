@@ -1,0 +1,67 @@
+/* body {
+    margin: 36px;
+    box-sizing: border-box;
+  } */
+
+/* startside */
+.homepage {
+    background-color: #CF3027; 
+    margin: -36px;
+    padding-bottom: 120px;
+}
+
+.homepagewhite { 
+    border-radius: 10px; 
+    background-color: white;
+    padding: 36px;
+}
+
+/* point boks startside*/
+.pointcontainer { background-color:#F9EEF0;
+    padding: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topointshop a { 
+   display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topointshop i {margin-left: 20px; color: #29223b;}
+
+
+/* Venner billeder */
+.karruselcontainer {max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .karruselcontainer .karrusel {
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    .karrusel img {
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        width: calc(100%/1.5);
+        height: 200px;
+        margin: 10px;
+        object-fit: cover;
+    }
+    
+    
+    /* bunden af siden */ 
+    .homepagebund { display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .homepagebund h3 { color: white;}
