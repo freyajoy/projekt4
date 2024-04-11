@@ -19,25 +19,27 @@
             <p>200 point</p>
         </header>
 
-        <div class="calendar-container">
-            <header class="calendar-header">
-                <p class="calendar-current-date"></p>
-                <div class="calendar-navigation">
-                    <span id="calendar-prev" class="material-symbols-rounded">chevron_left</span>
-                    <span id="calendar-next" class="material-symbols-rounded">chevron_right</span>
+        <div class="big-calendar-container">
+            <div class="calendar-container">
+                <header class="calendar-header">
+                    <p class="calendar-current-date"></p>
+                    <div class="calendar-navigation">
+                        <span id="calendar-prev" class="material-symbols-rounded">chevron_left</span>
+                        <span id="calendar-next" class="material-symbols-rounded">chevron_right</span>
+                    </div>
+                </header>
+                <div class="calendar-body">
+                    <ul class="calendar-weekdays">
+                        <li>Søn</li>
+                        <li>Man</li>
+                        <li>Tir</li>
+                        <li>Ons</li>
+                        <li>Tor</li>
+                        <li>Fre</li>
+                        <li>Lør</li>
+                    </ul>
+                    <ul class="calendar-dates"></ul>        
                 </div>
-            </header>
-            <div class="calendar-body">
-                <ul class="calendar-weekdays">
-                    <li>Søn</li>
-                    <li>Man</li>
-                    <li>Tir</li>
-                    <li>Ons</li>
-                    <li>Tor</li>
-                    <li>Fre</li>
-                    <li>Lør</li>
-                </ul>
-                <ul class="calendar-dates"></ul>        
             </div>
         </div>
 
@@ -61,14 +63,31 @@
                     <p class="p-detail">Sct. Hans Skole</p>
                     <i class="fa-solid fa-angle-right fa-lg"></i>
                 </div>
-            </div>
-            
+            </div>       
             <a href="aktiviteter.html" class="link">
-                <h2>Tilmeld dig flere aktivteter</h2>
+                <h3>Tilmeld dig flere aktivteter</h3>
                 <i class="fa-solid fa-angle-right fa-lg"></i>
             </a>  
         </div>
-  
+
+        <nav class="menu">
+            <div class="menu-btn">
+               <a href="index.html"><i class="fa-solid fa-house fa-lg"></i></a>
+                <p class="p-menu"> Hjem </p>
+            </div>
+            <div class="menu-btn">
+                <a href="aktiviteter.html"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+                <p class="p-menu">Søg aktivitet</p>
+            </div>
+            <div class="menu-btn">
+                <a href="kalender.html"><i id="kalender-icon"class="fa-regular fa-calendar fa-lg"></i></a>
+                <p class="p-menu"> Kalender </p>
+            </div>
+            <div class="menu-btn">
+               <a href="profile.html"> <i class="fa-solid fa-user fa-lg"></i></a>
+                <p class="p-menu"> Profil</p>
+            </div>
+        </nav>
     </body>
 
 </html>
