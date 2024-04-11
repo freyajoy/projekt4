@@ -1,23 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
  
 body {
     display: flex;
-    background: #ef62da;
-    min-height: 100vh;
     padding: 0 10px;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
  
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pointtekst {
+    background-color: #19998B;
+}
+
 .calendar-container {
     background: #fff;
-    width: 450px;
+    min-width: 350px;
+    max-width: 450px;
     border-radius: 10px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
 }
  
 .calendar-container header {
@@ -74,8 +82,9 @@ header .calendar-current-date {
  
 .calendar-body li {
     width: calc(100% / 7);
-    font-size: 1.07rem;
     color: #414141;
+    font-family: ‘Arial’, sans-serif;
+
 }
  
 .calendar-body .calendar-weekdays li {
@@ -111,7 +120,7 @@ header .calendar-current-date {
 }
  
 .calendar-dates li.active::before {
-    background: #6332c5;
+    background: #19998B;
 }
  
 .calendar-dates li:not(.active):hover::before {
