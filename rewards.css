@@ -1,0 +1,250 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .back-or-stay {
+      display: flex; 
+      /* Lav så de kan bevæge sig frit i container */
+      align-items: center; 
+      /* Centrer mine elementer i containeren (i row form) */
+      gap: 10px; 
+      /* Laver lidt plads mellem de to elementer i i containeren */
+    }
+  
+    .fa-angle-left {
+      font-size: 24px; 
+      /* Ændrede størrelsen så icon størrelse passer til skriften */
+    }
+  
+    #top-container i {
+      color: #CF3027; 
+      text-decoration: none;
+      /* Fjerner linjen under links */
+    }
+  
+    .om-mofibo {
+      width: 100%;
+      /* hele skærmen */
+      margin: auto;
+      /* Margin flytter sig med resten */
+      text-align: center;
+      /* Centreret tekst */
+  }
+  .om-mofibo-titel {
+      color: #000;
+      /* Farven på skriften */
+      font-size: 24px;
+      /* Størrelse på tekst */
+      /* margin: 20px 0; */
+  }
+  .om-mofibo p {
+      font-size: 16px;
+      color: #000000;
+  }
+  /* Størrlese og farve på brødtekst */
+  .points{
+  
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  /* Margin på points skrifterne */
+  
+  .mofibo-container h2{
+    margin: 0;
+    /* Definere at der ingen margin skal være, så man starter default */
+    padding-bottom: 15px ;
+    /* PAdding i bunden*/
+    display: flex;
+    /* Så den frit kan bevæge sig via flexbox */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slider-container {
+    position: relative;
+    /* Elemented kan justeres og er et reference punkt for børnelementerne */
+    max-width: 100%;
+    /* Maks vidde på 100% */
+    margin: auto;
+    /* Centrer elementerne indenfor forælder elementet */
+    overflow: hidden;
+    /* Skjuler indhold der strykke sig udenfor elementets boks*/
+    overflow-x: hidden;
+    /* Skjuler indhold der strykke sig udenfor elementets boks på x aksen*/
+  }
+  
+  
+  .slider {
+    display: flex;
+    /* Slides (børne elementerne) arrageres horizontalt og ved siden af hinanden i flex-containeren */
+    transition: transform 0.5s ease;
+    /* Laver transition være 0.5 sekunder og med effecten ease. Så den er mere smooth */
+  }
+  
+  .slide {
+    min-width: 100%;
+    /* Slide skal fylde minimum 100% vidde */
+    height: 500px;
+    /* Højde på slide */
+    background-size: cover;
+    /* Sørger for, at baggrundsbilledet dækker hele elementet, og beskæres for at bevare billedets proportioner. */
+    background-position: center;
+    /* Centrerer baggrundsbilledet i elementet */
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+   /* At man har pointer mus /cursor når man trykker på dem. (kun pc) */
+    position: absolute;
+    /* fastgør elementet ud fra det nærmeste forældreelement (slideren), som gør det muligt at placere knapper præcist inden i en container.*/
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centrer knapperne vertikalt ift slideren ved at placere dem 50% fra toppen og derefter trækker  50%  fra deres højde, så den placeres vertikalt i midten. */
+    background-color: rgba(25,152,139,0.5);
+    /* Laver en baggrundsfarce med 0.5 oppacity*/
+    color: white;
+    /* Skriftfarve hvid eller i dette tilfælde icon farven */
+    border: none;
+    /* Ingen kant */
+    border-radius: 30px;
+    /* Laver en rund kant på vores element */
+    font-size: 18px;
+    /* Ændre størrelse af icon */
+    padding: 10px 15px;
+    /* Sætter padding på knapper */
+  }
+  
+  .prev { left: 10px; }
+  /* Placerer "forrige"-knappen 10 pixels fra venstre side af slideren. */
+  .next { right: 10px; }
+  /* Placerer "næste"-knappen 10 pixels fra højre side af slideren. */
+  
+  .dots-container {
+    text-align: center;
+    /* Centrerer indholdet (typisk navigationspunkter eller dots) horisontalt i containeren. */
+    padding: 20px 0;
+    /* Insætter padding vertikalt, venstre og højre */
+  }
+  
+  .dot {
+    cursor: pointer;
+    /* At man har pointer mus /cursor når man trykker på dem. (kun pc) */
+    height: 15px;
+    /* Højde på dot */
+    width: 15px;
+    /* Bredde på dot */
+    margin: 0 5px;
+    /* Her speciferes er at der er 0 margin top og bund, men 5 margin horizontalt  */
+    background-color: #bbb;
+    /* baggrund farven på dot'ene */
+    border-radius: 50%;
+    /* Gør at det bliver til dots og gør dem runde */
+    display: inline-block;
+    /* Gør at elemented lan stå på linje med andre elementer (de andre dots) uden at starte en ny linje. Man kan sætte størrelser på, da det er et blok element.*/
+  }
+  
+  
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /* Hover baggrund på dots'ene */
+  
+  .om-mofibo h3{
+    font-weight: bold;
+  }
+  /* laver titel om mofibo tykkere */
+  
+  .om-mofibo p{
+  padding: 0 20px;
+  }
+  
+  .points p {
+    margin-top: 0;
+    margin-bottom: 5px; 
+  }
+  /* Fjerne margin top og indsætter 5 på bunden af hver p */
+  
+  .points p:first-child {
+    font-weight: bold; 
+    /* Gør teksten tykkere */
+  }
+  
+  .points p:last-child {
+    color: lightgray; 
+    /* Sætter hele teksten i anden <p> til lysegrå */
+  }
+  
+  .section-linje {
+    border-bottom: 3px solid #E4E4E4;
+    /* Laver linjen 3 pc tyk, og farven lysegrå */
+    width: 80%;
+    /* Laver vidden 80 % af skærmen */
+    display: flex;
+    /* Starter flexbox */
+    justify-content: center; 
+    /* Horizontalt centerer elementerne inde i flex containeren */
+    align-items: center; 
+    /* Vertikallt centrerer linjen */
+    margin: 0 auto; 
+    /* Centerers containeren inde i forældren ved at der er auto margin på begge sider */
+  }
+  
+  #top-container .back-or-stay {
+    display: flex;
+     /* Anvender flexbox til at arrangere børneelementer */
+    align-items: center; 
+    /* Centrerer elementerne vertikalt */
+    justify-content: space-between; 
+    /* Fordeler pladsen mellem elementerne */
+    padding-left: 15px; 
+    /* Tilføjer lidt plads til venstre */
+  }
+  
+  #top-container h1 {
+    margin-right: auto; 
+    /* Skubber alt til højre for h1 til den anden side */
+    margin-left: 20px; 
+    /* Tilføjer lidt mere plads til venstre for at flytte titlen */
+  }
+  
+  .vilkaer-mofibo{
+    padding-left: 20px; 
+    /* Tilføjer lidt plads til venstre */
+    text-align: left;
+    /* Arrange teksten i venstre side */
+    padding-bottom: 20px;
+  }
+  
+  .prev, .next {
+    display: none;
+    /* Viser ikke knapper i mindre skærm */
+  }
+  
+  .vilkaer-mofibo h3 {
+    text-align: center;
+    /* Alligner overskriften i midten */
+  }
+  
+  @media (min-width: 768px) {
+    .prev, .next {
+      display: block;
+      /* Viser knapperne på større skræm */
+    }
+    .ipad {
+      display: flex;
+      justify-content: center; 
+      /* Centrerer horisontalt */
+      align-items: center; 
+      /* Centrerer vertikalt */
+      
+      }
+      .vilkaer-mofibo h3 {
+        text-align: center;
+      }
+  }
