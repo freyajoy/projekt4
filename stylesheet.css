@@ -97,6 +97,20 @@ p {
     color: #19998B;
 }
 
+.point-btn {
+    margin: 20px;
+    padding: 0 36px;
+    background-color:#ffffff;
+    height: 52px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    font-family: ‘Avenir LT Pro’, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #CF3027
+}
+
 .red-btn:hover {
     background-color: #F9EEF0;
     border: 3px solid #CF3027;
@@ -121,15 +135,16 @@ p {
     color: #ffffff;
 }
 
+
 /*menu*/
 .menu {
     width: 100%;
     position: fixed;
     bottom:0;
+    left: 0;
     display: flex; 
     justify-content: space-around;
     padding: 20px 10px 10px 0px;
-    margin: 0px -36px;
     box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.2);
     background-color: white;
 }
@@ -146,12 +161,7 @@ p {
 
 a {text-decoration: none; color: #3C3253;}
 
-/*body*/
-body {
-    margin: 36px;
-    box-sizing: border-box;
-  }
-
+/*header*/
   header {
     display: flex;
     justify-content: space-between;
@@ -181,32 +191,6 @@ header a {
 header a i {
     margin-right: 10px;}
 
-  
-  .point-btn {
-    margin: 20px;
-    padding: 0 36px;
-    background-color:#ffffff;
-    height: 52px;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-    font-family: ‘Avenir LT Pro’, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    color: #CF3027
-}
-/* startside */
-.homepage {
-    background-color: #CF3027; 
-    margin: -36px;
-    padding-bottom: 120px;
-    
-}
-.homepagewhite { 
-    border-radius: 10px; 
-    background-color: white;
-    padding: 36px;
-}
 
 /* Bokse med billede og tekst */
 .articlecontainer {
@@ -220,7 +204,6 @@ header a i {
     max-width: 428px;
    
 }
-
 
 .articlecontainer img {width: 100%;
     border-radius: 20px 20px 0 0;
@@ -254,52 +237,5 @@ header a i {
     color:rgba(0, 0, 0, 0.65); 
     margin: 0 36px;
 }
-/* point boks startside*/
-.pointcontainer { background-color:#F9EEF0;
-    padding: 20px;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-.topointshop a { 
-   display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.topointshop i {margin-left: 20px; color: #29223b;}
 
 
-/* Venner billeder */
-.karruselcontainer {max-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.karruselcontainer .karrusel {
-    white-space: nowrap;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.karrusel img {
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    width: calc(100%/1.5);
-    height: 200px;
-    margin: 10px;
-    object-fit: cover;
-}
-
-
-/* bunden af siden */ 
-.homepagebund { display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-
-.homepagebund h3 { color: white;}
