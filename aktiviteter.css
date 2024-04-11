@@ -166,17 +166,13 @@ label {
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.articlecontainer {
-  max-width: 428px;
-  /* max-height: 480px; */
-}
-
 
 @media only screen and (min-width: 700px) {
   .article-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    max-height: 398px;
   }
 
   main {
@@ -184,7 +180,7 @@ label {
   }
 
   .btn-filter-container {
-    margin-right: 20px;
+    margin-right: 36px;
     min-width: 330px;
   }
 }

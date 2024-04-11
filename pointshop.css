@@ -4,17 +4,31 @@ body {margin-bottom: 120px;}
 .pointtekst { display:flex;
     justify-content: center;}
 
-.articlecontainer img {
-    height: 60%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .beløb {display: flex; 
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 
+.articlecontainer img {margin-bottom: 0;}
+
 .articlecontainer i { color: #CF3027;}
+
+
+@media only screen and (min-width: 700px) {
+    .article-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-height: 398px;
+      
+    }
+body {
+    margin-bottom: 500px;
+}
+
+.articlecontainer img {height: 220px;
+    width: 350px;
+margin: 0;
+padding: 0 20px;}
+}
