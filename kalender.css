@@ -6,6 +6,7 @@ body {
     margin-left: 36px;
     margin-right: 36px;
     margin-top: 20px;
+    margin-bottom: 120px;
     display: flex;
     padding: 0 10px;
     flex-direction: column;
@@ -22,6 +23,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 
@@ -151,47 +153,43 @@ h2 {
     align-items: center;
     justify-content: space-between;
     color: black;
+    max-width: 430px;
 
 }
 
-@media only screen and (min-width: 600px) {
-    .body *{
-        margin: 0;
-    }
+#kalender-icon{
+    color: #CF3027;
+}
 
+
+@media only screen and (min-width: 700px) {
 
     body {
-      background-color: lightblue;
       display: grid;
       grid-template-areas:
       'h h'
       'c a';
+      column-gap: 20px;
     }
-
 
     .header-container{
         grid-area: h;
-        background-color: aqua;
+    }
+
+    .big-calendar-container{
+        grid-area: c;
+        position: relative;
+        height: 100%;
+        display: flex;
     }
 
     .calendar-container{
-        grid-area: c;
-        width: 100%; /* Ensure the container fills its grid area */
-        max-width: 500px; /* Adjust maximum width if needed */
-        min-width: 350px; /* Adjust minimum width if needed */
-        height: 100%; /* Ensure the container fills its grid area */
+        align-self: flex-start;
     }
 
     .aktivitet-container{
         grid-area: a;
         height: 100%;
-        background-color: brown;
-        padding: 0;
         width: 100%;
-        margin: 0;
-    }
-
-    .aktivitet-container * {
-        margin: 0;
     }
   }
