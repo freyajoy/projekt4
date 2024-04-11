@@ -1,0 +1,13 @@
+body {
+    margin: 36px;
+}
+
+.startside-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startside-logo {
+    max-width: 220px;
+}
