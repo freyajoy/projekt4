@@ -186,3 +186,7 @@ label {
     min-width: 330px;
   }
 }
+
+#search {
+  color: #CF3027;
+}

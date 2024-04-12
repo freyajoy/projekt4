@@ -56,6 +56,7 @@ p {
     font-weight: 700;
     font-size: 2rem;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .pink-btn {
@@ -69,6 +70,7 @@ p {
     font-weight: 700;
     font-size: 2rem;
     color: #CF3027;
+    cursor: pointer;
 }
 
 .green-btn {
@@ -82,6 +84,7 @@ p {
     font-weight: 500;
     font-size: 1.667rem;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .lightgreen-btn {
@@ -95,6 +98,7 @@ p {
     font-weight: 500;
     font-size: 1.667rem;
     color: #19998B;
+    cursor: pointer;
 }
 
 .point-btn {
@@ -108,7 +112,8 @@ p {
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    color: #CF3027
+    color: #CF3027;
+    cursor: pointer;
 }
 
 .red-btn:hover {
@@ -152,6 +157,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu i { 
