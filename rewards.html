@@ -11,6 +11,7 @@
         <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="rewards.css">
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="popup.css">
         <script src="rewards.js" defer></script>
     </head>
     <body>
@@ -63,7 +64,19 @@
             <p>
                 Udforsk over 600.000 e- og lydbøger på Mofibo gratis i 3 måneder.
             </p>
-            <button class="pink-btn">Indløs point</button>
+
+            <button class="pink-btn" onclick="åben()">Indløs point</button>
+            
+            <div class="åben" id="åben">
+                <div class="indløs-point">
+                    <h2>Tillykke!</h2>
+                    <p>Vi takker for din indsats, nyd din lækre belønning!</p>
+                    <p>Her er din rabatkode:</p>
+                    <div id="rabatk"></div>
+                <button class="green-btn" onclick="luk()">Luk</button>
+                </div>
+            </div>
+            
             <div class="points">
             <p >400 point</p>
             <p>Du mangler 200 point</p>
