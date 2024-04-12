@@ -4,31 +4,31 @@ h1 {
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 700;
     color: #CF3027;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h2 {
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h3 {
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 p {
     font-family: ‘Arial’, sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .p-detail {
     font-family: ‘Arial’, sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: rgba(0, 0, 0, 0.65);} 
 
 .p-underline {
@@ -47,56 +47,56 @@ p {
 /*Knapper*/ 
 .red-btn {
     background-color: #CF3027;
-    width: 318px;
-    height: 52px;
+    width: 316px;
+    height: 50px;
     border-radius: 20px;
     border: none;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #ffffff;
     cursor: pointer;
 }
 
 .pink-btn {
     background-color: #F9EEF0;
-    width: 318px;
-    height: 52px;
+    width: 316px;
+    height: 50px;
     border: 3px solid #CF3027;
     border-radius: 20px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #CF3027;
     cursor: pointer;
 }
 
 .green-btn {
     background-color: #19998B;
-    width: 142px;
-    height: 40px;
+    width: 140px;
+    height: 38px;
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 500;
-    font-size: 1.667rem;
+    font-size: 1.4rem;
     color: #ffffff;
     cursor: pointer;
 }
 
 .lightgreen-btn {
     background-color: #D8FAF7;
-    width: 142px;
-    height: 40px;
+    width: 140px;
+    height: 38px;
     border: 3px solid #19998B;
     border-radius: 10px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
     font-family: ‘Avenir LT Pro’, sans-serif;
     font-weight: 500;
-    font-size: 1.667rem;
+    font-size: 1.4rem;
     color: #19998B;
     cursor: pointer;
 }
@@ -138,6 +138,66 @@ p {
     background-color: #19998B;
     border: none;
     color: #ffffff;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .p-detail {
+        font-size: 0.8rem;
+    }
+
+    .p-underline {
+        font-size: 0.8rem;
+    }
+    
+    .p-menu {
+        font-size: 0.5rem;
+        }
+    /*Knapper*/ 
+    .red-btn {
+        width: 318px;
+        height: 52px;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    
+    .pink-btn {
+        width: 318px;
+        height: 52px;
+        font-size: 2rem;
+    }
+    
+    .green-btn {
+        width: 142px;
+        height: 40px;
+        font-size: 1.667rem;
+    }
+    
+    .lightgreen-btn {
+        width: 142px;
+        height: 40px;
+        font-size: 1.667rem;
+    }
+    
+    .point-btn {
+        font-size: 1rem;
+    }
 }
 
 
