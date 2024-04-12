@@ -3,6 +3,7 @@
 body {
   margin: 36px;
   box-sizing: border-box;
+  margin-bottom: 120px;
 }
 
 header {
@@ -22,6 +23,7 @@ header p {
   align-self: center;
 }
 
+#search {color: #CF3027;}
 
 /* Her er styles til accordion */
 
