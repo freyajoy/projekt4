@@ -50,7 +50,7 @@ for (let i = 0; i < filterButtons.length; i++) {
       }
     }
     if (shouldBeDisplayed) {
-      article.style.display = 'flex';
+      article.style.display = 'block';
     } else {
       article.style.display = 'none';
     }

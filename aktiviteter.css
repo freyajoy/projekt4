@@ -178,6 +178,7 @@ label {
 
   main {
     display: flex;
+    height: 100vh;
   }
 
   .btn-filter-container {
@@ -185,7 +186,7 @@ label {
     min-width: 330px;
   }
 
-  main {
-    padding-bottom: 1000px;
+  .article-big-container {
+    margin-bottom: 500px;
   }
 }
