@@ -11,64 +11,61 @@
         <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
         <script src="kalender.js" defer></script>
     </head>
-
-    <body>      
-        <header class="header-container">
-            <h1>Kalender</h1>
-            <p>200 point</p>
-        </header>
-
-        <div class="big-calendar-container">
-            <div class="calendar-container">
-                <header class="calendar-header">
-                    <p class="calendar-current-date"></p>
-                    <div class="calendar-navigation">
-                        <span id="calendar-prev"><i class="fa-solid fa-chevron-left"></i></span>
-                        <span id="calendar-next"><i class="fa-solid fa-chevron-right"></i></span>
+    <body>
+        <main>  
+            <header class="header-container">
+                <h1>Kalender</h1>
+                <p>200 point</p>
+            </header>
+            <div class="big-calendar-container">
+                <div class="calendar-container">
+                    <header class="calendar-header">
+                        <p class="calendar-current-date"></p>
+                        <div class="calendar-navigation">
+                            <span id="calendar-prev"><i class="fa-solid fa-chevron-left"></i></span>
+                            <span id="calendar-next"><i class="fa-solid fa-chevron-right"></i></span>
+                        </div>
+                    </header>
+                    <div class="calendar-body">
+                        <ul class="calendar-weekdays">
+                            <li>Søn</li>
+                            <li>Man</li>
+                            <li>Tir</li>
+                            <li>Ons</li>
+                            <li>Tor</li>
+                            <li>Fre</li>
+                            <li>Lør</li>
+                        </ul>
+                        <ul class="calendar-dates"></ul>        
                     </div>
-                </header>
-                <div class="calendar-body">
-                    <ul class="calendar-weekdays">
-                        <li>Søn</li>
-                        <li>Man</li>
-                        <li>Tir</li>
-                        <li>Ons</li>
-                        <li>Tor</li>
-                        <li>Fre</li>
-                        <li>Lør</li>
-                    </ul>
-                    <ul class="calendar-dates"></ul>        
                 </div>
             </div>
-        </div>
-
-        <div class="aktivitet-container">
-            <h2> Tilmeldte aktivteter</h2>
-            <div class="articlecontainer"> 
-                <img src="images/billede2-optimeret.jpg" alt="lektie café"> 
-                <div class="containertekst">
-                    <h2>lektie café</h2>
-                    <h3>I morgen kl 16</h3>
-                    <p class="p-detail">Bolbro Bibliotek</p>
+            <div class="aktivitet-container">
+                <h2> Tilmeldte aktivteter</h2>
+                <div class="articlecontainer"> 
+                    <img src="images/billede2-optimeret.jpg" alt="lektie café"> 
+                    <div class="containertekst">
+                        <h2>lektie café</h2>
+                        <h3>I morgen kl 16</h3>
+                        <p class="p-detail">Bolbro Bibliotek</p>
+                        <i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>             
+                <div class="articlecontainer"> 
+                    <img src="images/hospitalcafe.jpg" alt="pige der laver mad"> 
+                    <div class="containertekst">
+                        <h2>Madklub</h2>
+                        <h3>Onsdag d. 8 maj</h3>
+                        <p class="p-detail">Sct. Hans Skole</p>
+                        <i class="fa-solid fa-angle-right fa-lg"></i>
+                    </div>
+                </div>       
+                <a href="aktiviteter.html" class="link">
+                    <h3>Tilmeld dig flere aktivteter</h3>
                     <i class="fa-solid fa-angle-right fa-lg"></i>
-                </div>
+                </a>  
             </div>
-            
-            <div class="articlecontainer"> 
-                <img src="images/hospitalcafe.jpg" alt="pige der laver mad"> 
-                <div class="containertekst">
-                    <h2>Madklub</h2>
-                    <h3>Onsdag d. 5 maj</h3>
-                    <p class="p-detail">Sct. Hans Skole</p>
-                    <i class="fa-solid fa-angle-right fa-lg"></i>
-                </div>
-            </div>       
-            <a href="aktiviteter.html" class="link">
-                <h3>Tilmeld dig flere aktivteter</h3>
-                <i class="fa-solid fa-angle-right fa-lg"></i>
-            </a>  
-        </div>
-
+        </main>
         <nav class="menu">
             <div class="menu-btn">
                <a href="homepage.html"><i class="fa-solid fa-house fa-lg"></i></a>
@@ -88,7 +85,6 @@
             </div>
         </nav>
     </body>
-
 </html>
 
 
