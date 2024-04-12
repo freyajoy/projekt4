@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     margin-left: 36px;
     margin-right: 36px;
@@ -25,6 +26,7 @@ header{
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 
 
 .calendar-container {
@@ -58,7 +60,7 @@ header .calendar-navigation span {
     border-radius: 50%;
     user-select: none;
     color: #aeabab;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
 }
  
 .calendar-navigation span:last-child {
@@ -91,9 +93,8 @@ header .calendar-current-date {
  
 .calendar-body li {
     width: calc(100% / 7);
-    color: #414141;
+    color: black;
     font-family: ‘Arial’, sans-serif;
-
 }
  
 .calendar-body .calendar-weekdays li {
