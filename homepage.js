@@ -4,12 +4,14 @@
 let pictures = [ 
     "/images/wilma.jpg",
     "/images/sigurd.jpg",
-    "/images/wilma.jpg"]
+    "/images/line.jpg",
+    "/images/kasper.jpg"]
 
 let altText = [
     "Billede af Wilma", 
     "Billede af Sigurd", 
-    "Billede af Wilma"
+    "Billede af Line", 
+    "Billede af Kasper"
 ]
 
 let container = document.getElementById('billedbeholder');
