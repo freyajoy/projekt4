@@ -89,32 +89,42 @@ function createDots() {
 document.addEventListener('DOMContentLoaded', createDots);
 
 // Pop up
-let popup = document.getElementById("åben");
 
+let popup = document.getElementById("åben");
+let tekst = document.getElementById("rabatk");
 function åben() { 
     popup.style.display="block"
-         document.getElementById("rabatk").innerHTML = kode;
-}
-
+         tekst.innerHTML = '<p>' + rabatkoder[currentIndex] + '</p>';
+            currentIndex++; 
+        if (currentIndex >= rabatkoder.length){
+            currentIndex=0
+         }}
+        
 function luk() {
     popup.style.display="none";
 }
 
-hour = 14;
+let rabatkoder = [
+    'GA12EF', 
+    'A394ED', 
+    'B5893F',
+    'Q4UH89',
+    'ACN456'
+    ];
 
-let rabatkoder = ['GA12EF', 'A394ED', 'B5893F'];
-let kode = "";
+let currentIndex=0;
+for (let i =0; i<rabatkoder.length; ++i) {}
 
-for (var i =0; i<rabatkoder.length; ++i) {
-    kode +=  rabatkoder[i] 
-}
 
-if (hour <12) { kode = "<p>" + rabatkoder[0] + "</p>"
-}
 
-else if (hour==12){ kode = "<p>" + rabatkoder[1] + "</p>" }
 
-else {
+// hour = 14;
+// if (hour <12) { kode = "<p>" + rabatkoder[0] + "</p>"
+// }
 
-    kode = "<p>" + rabatkoder[2] + "</p>"
-}
+// else if (hour==12){ kode = "<p>" + rabatkoder[1] + "</p>" }
+
+// else {
+
+//     kode = "<p>" + rabatkoder[2] + "</p>"
+// }
