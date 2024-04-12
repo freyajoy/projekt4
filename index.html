@@ -1,100 +1,28 @@
 <!DOCTYPE html>
-<html lang="da">
-     <head>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="homepage.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vær Fri-Villig</title>
-        <link href=“https://fonts.cdnfonts.com/css/avenir-lt-pro” rel=“stylesheet”>
-        <link href=“https://fonts.cdnfonts.com/css/arial” rel=“stylesheet”>
-        <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
-        <script src="homepage.js" defer></script>
-    </head>
-    <body >
-        <!--Menulinje-->
-        <nav class="menu">
-            <div class="menu-btn">
-               <a href="index.html"><i class="fa-solid fa-house fa-lg"></i></a>
-                <p class="p-menu"> Hjem </p>
-            </div>
-            <div class="menu-btn">
-                <a href="aktiviteter.html"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
-                <p class="p-menu">Søg aktivitet</p>
-            </div>
-            <div class="menu-btn">
-                <a href="kalender.html"><i class="fa-regular fa-calendar fa-lg"></i></a>
-                <p class="p-menu"> Kalender </p>
-            </div>
-            <div class="menu-btn">
-               <a href="profile.html"> <i class="fa-solid fa-user fa-lg"></i></a>
-                <p class="p-menu"> Profil</p>
-            </div>
-        </nav>
-        
-        <main class="homepage">
-            <header>
-                <a href="index.html"><img src="images/vear-fri-villig-fuld-logo-white.svg"> </a>
-                <a href="pointshop.html"><button class="point-btn"> 200 point </button></a>
-            </header>
-       
-            <div class="homepagewhite">
-                <h2> Forslag til dig: </h2>
-                <!-- aktivitets kasse -->
-                    <div class="articlecontainer"> 
-                        <img src="images/billede1-optimeret.jpg"> 
-                        <div class="containertekst">
-                            <i class="fa-solid fa-share-nodes fa-xl"></i>
-                            <h2> Fodboldkamp med Lasse </h2>
-                            <h3> Hjalleseskolen </h3>
-                                <div class="tidogdato">
-                                    <i class="fa-regular fa-calendar fa-lg"></i>
-                                    <p class="p-detail"> 13. marts 2024 </p>
-                                </div>
-                                <div class="tidogdato">
-                                    <i class="fa-regular fa-clock fa-lg"></i>
-                                    <p class="p-detail"> 14:00-15:00 </p>
-                                </div>
-                            <a href="aktiviteter.html"><i class="fa-solid fa-angle-right fa-xl"></i></a>
-                        </div>
-                    </div>
-                    
-                    <a href="aktiviteter.html"> <p> Se alle aktiviteter her <i class="fa-solid fa-angle-right"></i></p></a>
-                <hr>
-                <h2> Gør godt, få godt</h2>
-                <p> Din indsats belønnes med lækre præmier og points, og alt godt.
-                    Sammen hjælper vi hinanden. </p>
-                <div class="pointcontainer">
-                    <h3> Du har </h3>
-                    <h2> 200 point </h2>
-                    <div class="topointshop">
-                        <a href="pointshop.html"> 
-                            <p class="p-detail"> Til pointshoppen</p> 
-                            <i class="fa-solid fa-angle-right fa-xl"></i>
-                        </a>
-                    </div>
-                </div>
-                <hr>
-                <h2> Personer du måske kender: </h2>
-                <div class="karruselcontainer">
-                   <div class="karrusel" id="billedbeholder"> 
-                          
-                    </div>
-                </div>
-                <hr>
-                <h3> Vidste du...</h3>
-                <h2> At vi også tilbyder kurser?</h2>
-                <p> Ved at komme på disse kurser, kan du  få en masse kompentencer, 
-                    der kan styrke dine evner i forhold til udsatte unge og børn. 
-                </p>
-                <a href="kurser.html"> <p class="p-detail"> Find kurserne her <i class="fa-solid fa-angle-right"></i> </p></a>
-                
-            </div>
-            <div class="homepagebund"> 
-                <h3> Tid er mere værdifuldt end penge. </h3>
-                <h3> Tak fordi du hjælper! </h3>
-            </div>
-        </main>
-        
-
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startside</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/985c518ea2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="startside-container">
+        <img class="startside-logo" src="images/vear-fri-villig-fuld-logo.svg">
+        <h3 class="startside-h3">Er du allerede frivillig hos URK, så skal du logge ind her</h3>
+        <button type="button" class="red-btn" onclick="window.location.href='homepage.html'">Login</button>
+        <h3 class="startside-h3">Vil du gerne blive frivillig, skal du tilmelde dig herunder</h3>
+        <button type="button" class="pink-btn" onclick="window.location.href='signup.html'">Bliv frivillig</button>
+        <div class="some-knap-container">
+            <button type="button" class="some-knap-facebook"><i class="fa-brands fa-facebook"></i>Login med Facebook
+            </button>
+            <button type="button" class="some-knap-apple"><i class="fa-brands fa-apple"></i>Login med Apple
+            </button>
+        </div>
+        <p class="p-detail">I tvivl om, hvad det at blive frivillig indebærer?</p>
+        <p class="p-underline"><a></a>Læs mere her</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.åben {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    margin: 36px;
+    height: 50%;
+    width: 50%;
+    transition: all 0.3 ease-in-out;
+    z-index: 2;
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 25px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    width: 380px; 
+}
