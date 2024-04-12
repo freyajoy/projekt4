@@ -25,7 +25,9 @@ const months = [
 ];
  
 // Function to generate the calendar
-const manipulate = () => {
+//const manipulate = () => {
+
+function manipulate() {
  
     // Get the first day of the month
     let dayone = new Date(year, month, 1).getDay();
