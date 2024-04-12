@@ -27,8 +27,6 @@ header{
     margin-bottom: 20px;
 }
 
-
-
 .calendar-container {
     background: #fff;
     width: 100%;
@@ -141,7 +139,6 @@ h2 {
     margin-bottom:10px;
     display: flex;
     align-self: flex-start;
-
 }
 
 .containertekst * {
@@ -155,7 +152,6 @@ h2 {
     justify-content: space-between;
     color: black;
     max-width: 430px;
-
 }
 
 #kalender-icon{
