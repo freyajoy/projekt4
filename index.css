@@ -72,3 +72,8 @@ body {
 .some-knap-facebook:hover {
     background-color: #e8e8e8;
 }
+
+.startside-underline {
+    cursor: pointer;
+    font-size: 1rem;
+}
