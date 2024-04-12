@@ -3,11 +3,13 @@
     box-sizing: border-box;
   } 
 
+#hjem {color:#CF3027 ;}
+
 /* startside */
 .homepage {
     background-color: #CF3027; 
     margin: -36px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 
 .homepagewhite { 
@@ -52,7 +54,6 @@
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         width: calc(100%/1.5);
-        height: 200px;
         margin: 10px;
         object-fit: cover;
     }
@@ -65,3 +66,38 @@
     }
     
     .homepagebund h3 { color: white;}
+
+
+ @media only screen and (min-width: 700px) {
+        .karrusel img {
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: calc(100%/2.3);
+            height: 400px;
+            margin: 10px;
+            object-fit: cover;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        .karrusel img {
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: calc(100%/3);
+            height: 400px;
+            margin: 10px;
+            object-fit: cover;
+        }
+        
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .karrusel img {
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            width: calc(100%/4);
+            height: 400px;
+            margin: 10px;
+            object-fit: cover;
+        }
+        
+    }
