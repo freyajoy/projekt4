@@ -18,6 +18,16 @@
     padding: 36px;
 }
 
+/* Rediger flex wrap på artiklerne på forsiden */
+.article-flex {
+    display: flex; 
+    justify-content: center;
+    flex: nowrap;
+    flex-direction: column;
+    margin-bottom: 20px;}
+
+.articlecontainer {margin-right: 40px;}
+
 /* point boks startside*/
 .pointcontainer { background-color:#F9EEF0;
     padding: 20px;
@@ -77,6 +87,7 @@
             margin: 10px;
             object-fit: cover;
         }
+            
     }
     @media only screen and (min-width: 900px) {
         .karrusel img {
@@ -87,7 +98,11 @@
             margin: 10px;
             object-fit: cover;
         }
-        
+        .article-flex {
+            flex: wrap;
+            flex-direction: row;}
+
+    
     }
 
     @media only screen and (min-width: 1200px) {
@@ -99,5 +114,8 @@
             margin: 10px;
             object-fit: cover;
         }
+
+
+     
         
     }
