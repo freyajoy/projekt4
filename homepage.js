@@ -1,6 +1,5 @@
 
 
-
 let pictures = [ 
     "/images/wilma.jpg",
     "/images/sigurd.jpg",
@@ -56,8 +55,5 @@ function dragging (e) {
 function dragStop (e) { 
     e.preventDefault()
     swipe=false}
-
-
-//
 
 
