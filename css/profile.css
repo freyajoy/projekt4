@@ -237,4 +237,11 @@ body, html {
     font-weight: bold;
 }
 
-
+.mine-aktiviteter{
+    margin-left: 36px;
+    display: flex; 
+      /* Lav så de kan bevæge sig frit i container */
+      align-items: center; 
+      /* Centrer mine elementer i containeren (i row form) */
+      gap: 10px; 
+}
