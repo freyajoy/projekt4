@@ -218,7 +218,7 @@ body, html {
     padding-bottom: 30px;
 }
 
-.badges-all h3 {
+.badges-all h2 {
    margin-left: 36px;
    font-weight: bold;
 }
@@ -230,6 +230,11 @@ body, html {
 .badges img{
     height: 100px;
     width: auto;
-   
-
 }
+
+.venner h2{
+    margin-left: 36px;
+    font-weight: bold;
+}
+
+
