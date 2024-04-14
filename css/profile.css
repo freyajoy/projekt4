@@ -1,0 +1,235 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.header {
+    background-color: #CF3027;
+    /* Farven på baggrunden */
+    height: 20vh; 
+    /* Så den fylder 20% viewport height */
+    width: 100%;
+    /* 100% vidde */
+    display: flex; 
+    /* Gør brug af flexbox til at align elementerne */
+    justify-content: space-between; 
+    /* Positionere elementer i hver deres ende med luft mellem dem */
+    align-items: flex-start; 
+    /* Og det starter i venstre hjørne */
+}
+
+.header h1 {
+    color: white;
+    /* Hvid skrift */
+    margin: 0; 
+    /* Fjerner margin fra titlen */
+    padding-top: 20px;
+    /* padding over titlen */
+    padding-left: 36px; 
+    /* Tilføjer 36px padding til venstre */
+}
+
+.header a {
+    color: white; 
+    /* Hvid skrift/icon */
+    padding-top: 8px;
+    /* 8px padding top så den passer til vore h1  */
+    text-decoration: none; 
+    /* Da iconet er et link fjerne jeg alt dekoration på linket, så det ikke er visuelt */
+    padding-right: 36px; 
+    /* 36px padding til venstre så det alligner */
+}
+
+
+.header a i {
+    font-size: 24px;
+     /* Størrelsen på teksten 24px */
+    color: white; 
+    /* Hvid skrift/icon */
+}
+
+.main-content {
+    background-color: white;
+    /* Hvid baggrund */
+    width: 100%;
+    /* 100% vidde */
+    height: 80%; 
+    /* Resten af page som skulle være med hvid baggrund og ikke rød */
+    position: relative; 
+    /* Sætter relativ position, så der kan være absolut position på billedet */
+}
+
+
+.header i {
+    color: white;
+    /* Sætter farven på ikonet i headeren til hvid. */
+    margin: 0; 
+    /* ingen margin */
+    padding-left: 36px; 
+    /* Tilføjer en venstremargin på 36px til ikonet. Dette skubber ikonet 36 pixels væk fra venstre side eller fra det foregående element */
+    padding-top: 20px;
+    /* Adder 20 px padding top. Som justerer ikonets vertikale position, så det visuelt matcher højden og placeringen af overskriften h1 i headeren */
+}
+
+.profile-container a{
+    position: relative;
+}
+
+.profile-container {
+    position: relative;
+     /* Anchors the absolute positioning of the icon */
+    display: inline-block; 
+    /* Maintains inline flow with block properties */
+    text-align: center;
+     /* Centers the profile picture horizontally */
+    width: 200px;
+    top: -70px; 
+    /* Overlapper over headeren */
+    left: 50%; 
+    /* centrer profil billedet i midten  */
+    transform: translateX(-50%); 
+
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+
+    border: 2px solid white; 
+
+    display: inline-block; 
+ 
+    vertical-align: middle; 
+   
+}
+
+.edit-icon-link {
+    position: relative; 
+
+    top: calc(50% + 20px);
+
+    left: 100%; 
+   
+    transform: translateX(-50%); 
+    
+    display: block; 
+   
+}
+
+.edit-icon-link .edit-icon {
+    background-color: #19998B; 
+
+    color: #FFF;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none; 
+    
+    transform: translateY(-70px); 
+}
+
+.profil-info{
+    margin-bottom: 15px;
+}
+
+.profil-info p{
+    margin-top: 0;
+    margin-bottom: 5px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-70px); 
+}
+
+  .profil-info p:first-child {
+    font-weight: bold; 
+    color: #29223B; 
+    font-size: large;
+
+  }
+  
+  .profil-info p:last-child {
+    color: lightgray; 
+    
+  }
+
+  .mine-points{
+    background-color: #F9EEF0;
+    border-radius: 10px;
+    transform: translateY(-70px); 
+    padding: 8px;
+    width: 99%;
+    display: flex;
+    justify-content: space-around;
+  
+    text-align: center;
+    gap: 30px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .mine-points p:first-child {
+    font-weight: bold; 
+    color: #29223B; 
+  }
+  
+  .mine-points p:last-child {
+    color: #29223B; 
+  }
+
+  .lodret-linje{
+    border-left: solid 2px #707070;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .brug-points {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transform: translateY(-70px); 
+}
+.greener-btn {
+    background-color: #19998B;
+    width: 80%; 
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Avenir LT Pro', sans-serif; 
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center; 
+    margin-top: 60px; 
+    margin-bottom: 0;
+}
+
+.greener-btn:hover {
+    background-color: #D8FAF7;
+    border: 3px solid #19998B;
+    color: #19998B;
+}
+.badges-all {
+    background-color: #F9EEF0;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.badges-all h3 {
+   margin-left: 36px;
+   font-weight: bold;
+}
+.badges{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.badges img{
+    height: 100px;
+    width: auto;
+   
+
+}
