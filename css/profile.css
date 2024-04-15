@@ -245,3 +245,44 @@ body, html {
       /* Centrer mine elementer i containeren (i row form) */
       gap: 10px; 
 }
+
+
+.karruselcontainer {max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.karruselcontainer .karrusel {
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+.karrusel img {
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        width: calc(100%/1.5);
+        margin: 10px;
+        object-fit: cover;
+    }
+
+#profile {color: #CF3027;}
+
+
+    @media only screen and (min-width: 700px) {
+        .karrusel img {
+            width: calc(100%/2.3);
+        }    
+    }
+
+    @media only screen and (min-width: 900px) {
+        .karrusel img {
+            width: calc(100%/3);
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        .karrusel img {
+                    width: calc(100%/4);   
+                }
+            }
