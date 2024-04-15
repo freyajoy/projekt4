@@ -16,7 +16,6 @@
     border-radius: 10px; 
     background-color: white;
     padding: 36px;
-   
 }
 
 /* Rediger flex wrap på artiklerne på forsiden */
@@ -25,6 +24,7 @@
     justify-content: center;
     flex: wrap;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;}
 
 
@@ -90,7 +90,10 @@
             width: calc(100%/3);
         }
 
-        .article-flex {flex-direction: row;}
+        .article-flex {flex-direction: row;
+        flex-wrap: wrap;}
+
+        .articlecontainer {margin: 10px;}
     }
 
  @media only screen and (min-width: 1200px) {
