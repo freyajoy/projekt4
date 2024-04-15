@@ -3,6 +3,11 @@ body, html {
     padding: 0;
     height: 100%;
 }
+
+.space{
+    margin-bottom: 300px;
+}
+
 .header {
     background-color: #CF3027;
     /* Farven på baggrunden */
@@ -39,7 +44,6 @@ body, html {
     padding-right: 36px; 
     /* 36px padding til venstre så det alligner */
 }
-
 
 .header a i {
     font-size: 24px;
