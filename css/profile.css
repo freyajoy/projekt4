@@ -4,9 +4,7 @@ body, html {
     height: 100%;
 }
 
-nav{
-    margin-bottom: 250px;
-}
+
 .header {
     background-color: #CF3027;
     /* Farven på baggrunden */
@@ -44,6 +42,9 @@ nav{
     /* 36px padding til venstre så det alligner */
 }
 
+.space{
+    padding: 250px;
+}
 
 .header a i {
     font-size: 24px;
