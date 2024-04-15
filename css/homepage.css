@@ -16,6 +16,7 @@
     border-radius: 10px; 
     background-color: white;
     padding: 36px;
+   
 }
 
 /* Rediger flex wrap på artiklerne på forsiden */
@@ -24,9 +25,9 @@
     justify-content: center;
     flex: wrap;
     flex-direction: column;
-    margin-bottom: 20px;}
+    margin-bottom: 10px;}
 
-.articlecontainer {margin-right: 40px;}
+
 
 /* point boks startside*/
 .pointcontainer { background-color:#F9EEF0;
