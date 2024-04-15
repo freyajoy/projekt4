@@ -1,4 +1,7 @@
+// Freya
 // Initialiserer slideIndex med 0 for at starte fra det første slide.
+
+//video start
 let slideIndex = 0;
 
 // Variabel uden initial værdi; vil blive brugt til at lagre startpositionen for en swipe.
@@ -21,6 +24,8 @@ function moveSlide(step) {
     // Opdaterer hvilken dot der vises som aktiv baseret på det nuværende slide.
     updateActiveDot(slideIndex);
 }
+
+// video slut
 
 // Opsætning af touchstart-event for at understøtte swipe-funktionalitet.
 document.querySelector('.slider').addEventListener('touchstart', e => {
@@ -48,7 +53,9 @@ document.querySelector('.slider').addEventListener('touchend', e => {
     }
 }, false);
 
-// Automatisk skift af slides hver 2000. millisekund (2 sekunder).
+// VIDEO start
+
+// Automatisk skift af slides hver 3000. millisekund (3 sekunder).
 setInterval(() => moveSlide(1), 3000);
 
 // Funktion til at fremhæve den aktive dot baseret på det aktuelle slide.
@@ -60,6 +67,8 @@ function updateActiveDot(index) {
     // Tilføjer 'active' klassen til den dot, der matcher det aktuelle slide.
     dots[index].classList.add('active');
 }
+
+//video slut
 
 // Funktion til at oprette dots baseret på antallet af slides og sætter klik-lyttere på dem.
 function createDots() {
@@ -88,7 +97,7 @@ function createDots() {
 // Når DOM'en er fuldt indlæst, kald createDots for at initialisere dots.
 document.addEventListener('DOMContentLoaded', createDots);
 
-// Pop up
+// Pop up (Naya)
 
 let popup = document.getElementById("åben");
 let tekst = document.getElementById("rabatk");
