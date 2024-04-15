@@ -14,7 +14,7 @@ body {
 .switch-btn {
     display: flex;
     margin-bottom: 20px;
-    width: 428px;
+    width: 300px;
   }
   
   .switch-red {
@@ -80,7 +80,8 @@ body {
       max-height: 398px;
      
     }
-
+    .switch-btn {
+        width: 489px;}
 
 }
 
