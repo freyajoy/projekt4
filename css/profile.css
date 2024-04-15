@@ -4,6 +4,9 @@ body, html {
     height: 100%;
 }
 
+.space{
+    margin-bottom: 300px;
+}
 
 .header {
     background-color: #CF3027;
