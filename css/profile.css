@@ -42,10 +42,6 @@ body, html {
     /* 36px padding til venstre så det alligner */
 }
 
-.space{
-    padding: 250px;
-}
-
 .header a i {
     font-size: 24px;
      /* Størrelsen på teksten 24px */
