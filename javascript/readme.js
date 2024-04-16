@@ -5,3 +5,4 @@ for (let i = 0; i < acc.length; i++) {
         accordion.classList.toggle('active');
     });
 }
+
