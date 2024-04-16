@@ -6,14 +6,18 @@ body {
     background-color: white;
 }
 
+.tillykke-container{
+    display: flex;
+    justify-content: center;
+}
+
 .åben {
     background-color: rgb(255, 255, 255);
     margin: 36px;
-    margin-left: 150px;
     height: 50%;
     width: 50%;
     transition: all 0.3s ease-in-out;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: content;
     align-items: center;
