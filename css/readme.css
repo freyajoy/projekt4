@@ -1,9 +1,27 @@
 * {box-sizing: border-box;}
 
+
+header a {
+  color: #CF3027;
+}
+
+.container {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+
 .accordion {
     border: 1px solid #29223B;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin: 0 36px 15px;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
   }
   
@@ -22,23 +40,12 @@
     padding: 10px;
   }
 
-  .container {
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .img {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 30px;
-    margin-top: 5px;
-  }
 
   .accordion.active .accordion-content{ display:block; }
 
   i {
     align-self: center;
     margin-right: 30px;
+    margin-left: 30px;
   }
+
