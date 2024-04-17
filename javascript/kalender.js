@@ -8,7 +8,7 @@ const currdate = document.querySelector(".calendar-current-date");
  
 const prenexIcons = document.querySelectorAll(".calendar-navigation span");
  
-// Array of month names
+// Array af navne på måneder
 const months = [
     "Januar",
     "Februar",
@@ -24,36 +24,34 @@ const months = [
     "December"
 ];
  
-// Function to generate the calendar
-//const manipulate = () => {
-
+// Funktion der generer kalenderen
 function manipulate() {
  
-    // Get the first day of the month
+    // får fat i den første ugedag på måneden
     let dayone = new Date(year, month, 1).getDay();
  
-    // Get the last date of the month
+    // får fat i den sidste dag på måndeden
     let lastdate = new Date(year, month + 1, 0).getDate();
  
-    // Get the day of the last date of the month
+    // får fat i ugedagen på den sidste dag på måneden
     let dayend = new Date(year, month, lastdate).getDay();
  
-    // Get the last date of the previous month
+    // får fat i den sidste dag på den foregående måned
     let monthlastdate = new Date(year, month, 0).getDate();
  
-    // Variable to store the generated calendar HTML
+    // Variable til at gemme den genererede kalender HTML
     let lit = "";
  
-    // Loop to add the last dates of the previous month
+    // Loop der tilføjer de sidste dage i den foregående måned
     for (let i = dayone; i > 0; i--) {
         lit +=
             `<li class="inactive">${monthlastdate - i + 1}</li>`;
     }
  
-    // Loop to add the dates of the current month
+    // Loop der tilføjer dagene i den nuværende måned
     for (let i = 1; i <= lastdate; i++) {
  
-        // Check if the current date is today
+        // Tjekker om den datoen er dagens dato
         let isToday = i === date.getDate()
             && month === new Date().getMonth()
             && year === new Date().getFullYear()
@@ -62,54 +60,50 @@ function manipulate() {
         lit += `<li class="${isToday}">${i}</li>`;
     }
  
-    // Loop to add the first dates of the next month
+    // Loop der tilføjer de første dage af den kommende måned
     for (let i = dayend; i < 6; i++) {
         lit += `<li class="inactive">${i - dayend + 1}</li>`
     }
  
-    // Update the text of the current date element 
-    // with the formatted current month and year
+    // Opdaterer teksten i headeren med den nuværende måned og år
     currdate.innerText = `${months[month]} ${year}`;
  
-    // update the HTML of the dates element 
-    // with the generated calendar
+    // Opdaterer HTML for date elementer med den genererede kalender
     day.innerHTML = lit;
 }
  
 manipulate();
  
-// Attach a click event listener to each icon
+// sætter et click event listner på hver af ikonerne/pilene
 prenexIcons.forEach(icon => {
  
-    // When an icon is clicked
+    // Når et ikon bliver trykket på
     icon.addEventListener("click", () => {
  
-        // Check if the icon is "calendar-prev"
-        // or "calendar-next"
+        // Tjek om ikonet har id'et calendar-prev
+        // eller "calendar-next"
         month = icon.id === "calendar-prev" ? month - 1 : month + 1;
  
-        // Check if the month is out of range
+        // Tjek om måneden er uden for rækkevidde
         if (month < 0 || month > 11) {
  
-            // Set the date to the first day of the 
-            // month with the new year
+            // Sætter datoen til den første dag på måneden med det nye år
             date = new Date(year, month, new Date().getDate());
  
-            // Set the year to the new year
+            // Sæt måneden til det nye år
             year = date.getFullYear();
  
-            // Set the month to the new month
+            // Sæt måneden til den nye måned
             month = date.getMonth();
         }
  
         else {
- 
-            // Set the date to the current date
-            date = new Date();
+           // Sæt datoen til den nuværende dato
+          date = new Date();
+  
         }
  
-        // Call the manipulate function to 
-        // update the calendar display
+        // Kalder på funktionen for at opdater kalenderens display
         manipulate();
     });
 });

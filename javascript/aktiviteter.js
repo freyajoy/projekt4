@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 let filterButtons = document.querySelectorAll('.filterButton');
 for (let i = 0; i < filterButtons.length; i++) {
   filterButtons[i].addEventListener("click", function() {
-    console.log("udført")
   
     // Få fat i alle de valgte kategorier
   let checkedCategories = document.querySelectorAll('.category:checked');
