@@ -1,10 +1,10 @@
 
 
 let pictures = [ 
-    "/images/wilma.jpg",
-    "/images/sigurd.jpg",
-    "/images/line.jpg",
-    "/images/kasper.jpg"]
+    "./images/wilma.jpg",
+    "./images/sigurd.jpg",
+    "./images/line.jpg",
+    "./images/kasper.jpg"]
 
 let altText = [
     "Billede af Wilma", 
