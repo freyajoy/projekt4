@@ -24,7 +24,6 @@ for (let i = 0; i < pictures.length; i++) {
 
 let karrusel= document.querySelector(".karrusel")
 
-let swipe=false, prevPageX, prevScrollLeft
 
 karrusel.addEventListener("mousedown", dragStart);
 karrusel.addEventListener("touchstart", dragStart);
@@ -36,7 +35,7 @@ karrusel.addEventListener("mouseup", dragStop);
 karrusel.addEventListener("mouseleave", dragStop);
 karrusel.addEventListener("touchend", dragStop);
 
-
+let swipe=false, prevPageX, prevScrollLeft
 
 function dragStart (e) { 
     // Opdaterer globale variablers værdi ved Event
@@ -50,7 +49,8 @@ function dragging (e) {
     if (swipe==false) return;
     let position = (e.pageX || e.touches[0].pageX) - prevPageX
     karrusel.scrollLeft = prevScrollLeft - position
-    e.preventDefault()}
+    e.preventDefault()
+}
 
 function dragStop (e) { 
     e.preventDefault()
