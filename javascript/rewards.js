@@ -1,7 +1,7 @@
 // Freya
 // Initialiserer slideIndex med 0 for at starte fra det første slide.
 
-//video start
+//DEL 1 START
 let slideIndex = 0;
 
 // Variabel uden initial værdi; vil blive brugt til at lagre startpositionen for en swipe.
@@ -24,6 +24,7 @@ function moveSlide(step) {
     // Opdaterer hvilken dot der vises som aktiv baseret på det nuværende slide.
     updateActiveDot(slideIndex);
 }
+//DEL 1 SLUT
 
 // video slut
 
